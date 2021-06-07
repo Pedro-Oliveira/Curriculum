@@ -1,0 +1,43 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 4px 35px;
+    justify-content: space-between;
+    align-content: center;
+}
+ul, a{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+    margin-top: 0;
+    padding: 5px;
+}
+li:hover{
+    background-color: grey;
+}
+.home-box{
+    margin: 100px;
+    max-width:530px;
+}
+.home-box > h1{
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.home-box > button{
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 8px;
+}
