@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: whitesmoke;
+    background-color: #f4f2f0;
     font-family: 'Poppins', sans-serif;
 }
 header{
@@ -27,19 +27,38 @@ header > p, ul, a{
 }
 li:hover{
     transition: ease 0.2s;
-    background-color: tomato;
-    border-radius: 2vh;
+    background-color: #c8d7d2;
+    border-radius: 40px;
 }
 .home-box{
+    display: inline-block;
     margin: 100px;
-    max-width:530px;
+    max-width:500px;
 }
 .home-box > h1{
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding-bottom: 10px;
+}
+.home-box > p{
+    font-family: sans-serif;
+    font-size: 1.4rem;
 }
 .home-box > button{
     margin-top: 30px;
-    font-size: 1rem;
-    /*padding: 8px;*/
+    background-color: #d84339;
+    border: none;
+    font-size: 1.2rem;
+}
+.profile{
+    float: right;
+    margin: 0 100px;
+    background-color: darkred;
+    border-radius: 34% 61% 33% 46% / 33% 60% 26% 23%;
+    overflow: hidden;
+}
+img{
+    max-width:400px;
+    max-height:450px;
+    width: auto;
+    height: auto;
 }
