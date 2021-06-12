@@ -16,8 +16,13 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+.material-icons{
+    position: relative;
+    top: 5px;
+}
 header > p, ul, a{
     margin: 15px 20px;
+    cursor: pointer;
     font-size: 1.4rem;
     list-style: none;
     display: flex;
@@ -27,7 +32,7 @@ header > p, ul, a{
 }
 li:hover{
     transition: ease 0.2s;
-    background-color: #c8d7d2;
+    background-color: #c7d4d0;
     border-radius: 40px;
 }
 .home-box{
@@ -47,18 +52,25 @@ li:hover{
     margin-top: 30px;
     background-color: #d84339;
     border: none;
+    transition: ease-out 0.3s;
+    outline: none;
     font-size: 1.2rem;
+}
+button:hover{
+    background-color: darkred;
 }
 .profile{
     float: right;
-    margin: 0 100px;
-    background-color: darkred;
-    border-radius: 34% 61% 33% 46% / 33% 60% 26% 23%;
+    margin: 65px 100px;
+    background-image: linear-gradient(#c7d4d0, #e7e8eb);
+    border-radius: 50% 50% 20% 20% / 50% 50% 20% 20%;
     overflow: hidden;
 }
 img{
     max-width:400px;
-    max-height:450px;
+    max-height:400px;
+    position: relative;
+    top: 10px;
     width: auto;
     height: auto;
 }
