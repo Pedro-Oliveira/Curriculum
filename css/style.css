@@ -22,6 +22,7 @@ body{
 .menu{
     position: relative;
     top: -3px;
+    padding: 5px;
     display: none;
 }
 header{
@@ -55,7 +56,7 @@ li:hover{
     border-radius: 40px;
 }
 .home-box{
-    margin-bottom: 100px;
+    margin: 80px 0;
     max-width: 500px;
 }
 .home-box > h1{
@@ -84,7 +85,7 @@ li:hover{
 .profile{
     width: 400px;
     height: 400px;
-    margin-bottom: 100px;
+    margin: 80px 0;
     background-color: var(--light-grey);
     border-radius: 50%;
     overflow: hidden;
@@ -105,13 +106,20 @@ img{
 }
 .sobre{
     background-color: var(--light-grey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 0;
 }
 .picture{
     display: inline-block;
+    width: 300px;
+    height: 400px;
 }
 .aboutme{
     width: 500px;
-    float: right;
+    text-align: justify;
+    margin: ;
 }
 @media only screen and (max-width: 880px){
     .menu{
@@ -119,20 +127,26 @@ img{
     }
     .lista{
         position: fixed;
-        top: 44px;
-        right: -100%;
+        top: 57px;
+        right: -20px;
         height: 100vh;
         z-index: 5;
         background-color: var(--light-black);
         flex-direction: column;
         padding: 85px;
-        max-width: 100vmax;
+        min-width: 200px;
+        margin: 0 auto;
     }
     .lista > li{
         text-align: center;
+        line-height: 50px;
         margin: 0 auto;
     }
     .lista.active{
-        right: -20px;
+        right: -1000px;
+        transition: ease 0.3s;
+    }
+    .aboutme{
+        margin: 30px 5vw;
     }
 }
