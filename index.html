@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Portifolio/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     
@@ -30,7 +31,7 @@
         <div class="home-box">
             <i></i>
             <h1>Pedro H. P. Oliveira Santos</h1>
-            <p>Programador Web, conheco o básico de Frontend e domino o responsivo, além de uma noção geral sobre web design. Ainda ganhando experiência, mas melhorando a cada dia.</p>
+            <p>Programador Web. Conheco o básico de Frontend e domino o responsivo, além de uma noção geral sobre web design. Ainda ganhando experiência, mas melhorando a cada dia.</p>
             <button><a href="">Saiba mais</a></button>
         </div>
         <div class="profile">
@@ -38,13 +39,17 @@
         </div>
     </section>
     <section class="sobre">
-        <img src="../Portifolio/images/pixeltrue-web-development.png" width="130" height="100" alt="Guy programing">
+        <img class="guy" src="../Portifolio/images/pixeltrue-web-development.png" alt="Guy programing">
         <!--Illustration by <a href="https://icons8.com/illustrations/author/5ec7b0e101d0360016f3d1b3">Pixeltrue</a> from <a href="https://icons8.com/illustrations">Ouch!</a>-->
-        <div class="aboutme">
+        <div data-aos="fade-up-left" class="aboutme">
             <h1 style="text-align: center; font-size: 30px;">Conhecimentos e experiência</h1>
             <p>Sou um estudante autodidata, aprendi a programar através de livros, sites e materiais na internet, porém recentemente comecei o curso de Front-end da Danki Code. Fiz vários projetos, onde pus à prova tudo que aprendi, alguns privados, outros não upados e muitos no Github. Já fiz trabalhos como freelancer então não tenho problemas com o trabalho em equipe ou comunicação.</p>
         </div>
     </section>
     <script src="../Portifolio/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
