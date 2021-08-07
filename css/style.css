@@ -56,7 +56,7 @@ li:hover{
     border-radius: 40px;
 }
 .home-box{
-    margin: 80px 0;
+    margin: 80px 4vw;
     max-width: 500px;
 }
 .home-box > h1{
@@ -121,9 +121,19 @@ img{
     width: 500px;
     text-align: justify;
 }
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 76px;
+    text-align: center;
+}
 @media only screen and (max-width: 880px){
     .menu{
         display: block;
+    }
+    .home-box{
+        text-align: center;
     }
     .lista{
         position: fixed;
@@ -148,5 +158,8 @@ img{
     }
     .aboutme{
         margin: 30px 5vw;
+    }
+    .aboutme, p{
+        text-align: justify;
     }
 }
