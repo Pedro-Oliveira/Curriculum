@@ -3,7 +3,7 @@
     --light-black: #1f232a;
     --red: darkred;
     --blue: #60dafb;
-    --dark-grey: #3B3B3B;
+    --dark-grey: #555454;
     --light-grey: #e7e8eb;
     --yellow: #f9b100;
     --poppins: 'Poppins', sans-serif;
@@ -130,46 +130,28 @@ img{
     justify-content: space-around;
     text-align: center;
 }
-.slide{
-    max-width: 700px;
-    max-height: 410px;
-    margin-bottom: 70px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-    transition: all 0.4s;
-}
-.slides{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
 .images img{
     border-radius: 5px;
     min-width: 682px;
     min-height: 384px;
     display: block;
 }
-.bnt{
-    position: absolute;
-    display: flex;
-    cursor: pointer;
-    z-index: 5;
-    font-size: 2em;
+#contato{
+    margin: 0;
+    padding: 10px;
+    background-color: var(--light-black);
+    color: whitesmoke;
 }
-.bnt:hover{
-    transform: scale(4);
+.contato{
+    background-color: var(--light-black);
+    margin: 0;
+    padding: 50px 0 30px;
+    color: whitesmoke;
 }
-#next{
-    transform: translateY(-50%);
-    top: 50%;
-    right: 1%;
-}
-#voltar{
-    transform: translateY(-50%);
-    top: 50%;
-    left: 1%;
+.sidecontacts{
+    line-height: 1px;
+    font-size: 26px;
+    gap: 20px;
 }
 @media only screen and (max-width: 880px){
     .menu{
