@@ -43,6 +43,7 @@ header{
 }
 header > p, ul, a{
     margin: 10px 20px;
+    min-width: 10px;
     cursor: pointer;
     font-size: 1.4rem;
     list-style: none;
@@ -50,6 +51,9 @@ header > p, ul, a{
     gap: 10px;
     text-decoration: none;
     color: whitesmoke;
+}
+header a{
+    padding: px;
 }
 li:hover{
     transition: ease 0.2s;
@@ -80,7 +84,7 @@ li:hover{
     font-size: 1.2rem;
 }
 .home-box > button:hover{
-    box-shadow: inset 200px 0 0 0 var(--yellow);
+    box-shadow: inset 250px 0 0 0 var(--yellow);
     cursor: pointer;
 }
 .profile{
@@ -144,14 +148,31 @@ img{
 }
 .contato{
     background-color: var(--light-black);
-    margin: 0;
-    padding: 50px 0 30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 100px;
+    padding: 0 0 30px;
     color: whitesmoke;
 }
 .sidecontacts{
     line-height: 1px;
     font-size: 26px;
-    gap: 20px;
+    position: relative;
+    top: 11px;
+    margin-left: 15px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    outline: unset;
+    padding: 20px;
+    width: 600px;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 @media only screen and (max-width: 880px){
     .menu{
@@ -186,5 +207,8 @@ img{
     }
     .aboutme, p{
         text-align: justify;
+    }
+    aside{
+        margin: 20px auto;
     }
 }
