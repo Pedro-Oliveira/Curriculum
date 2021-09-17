@@ -28,6 +28,7 @@ body{
 }
 header{
     width: 100%;
+    height: 80px;
     display: flex;
     position: fixed;
     top: 0;
@@ -41,9 +42,8 @@ header{
     position: relative;
     top: 5px;
 }
-header > p, ul, a{
+header > p, ul{
     margin: 10px 20px;
-    min-width: 10px;
     cursor: pointer;
     font-size: 1.4rem;
     list-style: none;
@@ -52,8 +52,16 @@ header > p, ul, a{
     text-decoration: none;
     color: whitesmoke;
 }
-header a{
-    padding: px;
+header li{
+    padding: 10px 0;
+}
+a{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
 }
 li:hover{
     transition: ease 0.2s;
@@ -82,6 +90,14 @@ li:hover{
     transition: ease-out 0.3s;
     box-shadow: inset 0 0 0 0 var(--yellow);
     font-size: 1.2rem;
+}
+.home-box a{
+    padding: 30px 20px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
 }
 .home-box > button:hover{
     box-shadow: inset 250px 0 0 0 var(--yellow);
