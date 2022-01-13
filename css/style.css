@@ -83,7 +83,7 @@ li:hover{
 .home-box > button{
     position: relative;
     margin-top: 30px;
-    padding: 5px 20px;
+    padding: 20px 30px;
     background-color: var(--red);
     border: none;
     outline: none;
@@ -119,7 +119,7 @@ li:hover{
 }
 img{
     max-width: 400px;
-    max-height:400px;
+    max-height: 400px;
     position: relative;
     top: 10px;
     width: auto;
@@ -137,7 +137,10 @@ img{
     min-width: 450px;
     height: 350px;
 }
-
+.logos{
+    max-height: 200px;
+    margin-top: 60px;
+}
 .aboutme{
     width: 500px;
     text-align: justify;
