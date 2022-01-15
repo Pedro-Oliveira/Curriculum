@@ -4,3 +4,9 @@ $(document).ready(function(){
         $(".lista").toggleClass("active")
     })
 });
+$(document).ready(function(){
+    $(".lista").click(function(){
+        $(this).toggleClass("active")
+        $(".menu").toggleClass("active")
+    })
+});
