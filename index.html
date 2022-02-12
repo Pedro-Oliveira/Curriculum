@@ -86,57 +86,62 @@
             <p style="text-align: center;">Básico</p>
         </div>
     </section>
-    <!--<section class="portifolio">
-    <h1 id="projetos" style="text-align: center; font-family: var(--roboto); font-size: 60px; padding-top: 150px; margin: 0 auto;">Portifólio</h1>
-    <h3 style="text-align: center; padding-bottom: 5px; margin: 0 auto">Trabalhos recentes</h3>
-        <p>...</p>
-    </section> -->
     <h1 id="contato" style="text-align: center; font-family: var(--roboto); font-size: 50px; padding-top: 100px; margin: 0 auto;">Contacte-me</h1>
     <h3 id="contato" style="text-align: center; padding-bottom: 100px; margin: 0 auto">Para mais informações</h3>
     <section class="contato">
-        <aside><div style="display: flex; margin: 170px 50px 0 50px;">
-            <img style="width: 70px;" src="../Portifolio/images/email_white_48dp.svg" alt="email icon">
-            <span class="sidecontacts">
-                <h4>E-mail</h4>
-                <h5>pdhp151001@gmail.com</h5>
-            </span>
-        </div>
-        <div style="display: flex; margin: 50px;">
-            <img style="width: 70px;" src="../Portifolio/images/phone_white_48dp.svg" alt="phone icon">
-            <span class="sidecontacts">
-                <h4>Telefone</h4>
-                <h5>11 98418-9409</h5>
-            </span>
-        </div>
-        <div style="display: flex; margin: 50px;">
-            <img style="width: 70px;" src="../Portifolio/images/whatsapp_white_48dp.svg" alt="whatsapp icon">
-            <span class="sidecontacts">
-                <h4>Whatsapp</h4>
-                <h5>11 98418-9409</h5>
-            </span>
-        </div></aside>
-        <aside>
-            <form action="https://api.staticforms.xyz/submit" method="POST">
-                <div style="font-size: 24px; padding-bottom: 20px; text-align: center;"><h2>Me envie uma mensagem</h2></div>
-                <div>
-                    <label>Nome</label>
-                    <input type="text" placeholder="Digite seu nome" name="name" required>
+        <div class="flex"><div class="container">
+                <div class="contactinfo">
+                    <div class="box">
+                        <div class="icon"><img style="width: 70px;" src="../Portifolio/images/email_white_48dp.svg" alt="email icon"></div>
+                        <div class="text">
+                            <h4>E-mail</h4>
+                            <p>pdhp151001@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label>E-mail</label>
-                    <input type="text" placeholder="Digite seu E-mail" name="email" required>
+            </div>
+            <div class="container">
+                <div class="contactinfo">
+                    <div class="box">
+                        <div class="icon"><img style="width: 70px;" src="../Portifolio/images/phone_white_48dp.svg" alt="phone icon"></div>
+                        <div class="text">
+                            <h4>Telefone</h4>
+                            <p>(11)98418-9409</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label>mensagem</label>
-                    <textarea style="resize: none;" name="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="container">
+                <div class="contactinfo">
+                    <div class="box">
+                        <div class="icon"><img style="width: 70px;" src="../Portifolio/images/whatsapp_white_48dp.svg" alt="whatsapp icon"></div>
+                        <div class="text">
+                            <h4>Whatsapp</h4>
+                            <p>(11)98418-9409</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <input type="hidden" name="redirectTo" value="#contato">
-                    <input type="hidden" name="accessKey" value="34db246d-a7df-41b6-af93-b411565cb3b2">
-                    <input style="width: 644px; font-size: 20px; cursor: pointer;" type="submit" value="Enviar">
-                </div>
-            </form>
-        </aside>
+            </div></div>
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <div style="font-size: 24px; padding-bottom: 20px; text-align: center;"><h2>Me envie uma mensagem</h2></div>
+            <div>
+                <label>Nome</label>
+                <input type="text" placeholder="Digite seu nome" name="name" required>
+            </div>
+            <div>
+                <label>E-mail</label>
+                <input type="text" placeholder="Digite seu E-mail" name="email" required>
+            </div>
+            <div>
+                <label>mensagem</label>
+                <textarea style="resize: none;" name="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="hidden" name="redirectTo" value="#contato">
+                <input type="hidden" name="accessKey" value="34db246d-a7df-41b6-af93-b411565cb3b2">
+                <input style="width: 100%; max-width: 644px; font-size: 20px; cursor: pointer;" type="submit" value="Enviar">
+            </div>
+        </form>
     </section>
     <script src="../Portifolio/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

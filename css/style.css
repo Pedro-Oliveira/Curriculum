@@ -166,34 +166,74 @@ img{
     color: whitesmoke;
 }
 .contato{
-    background-color: var(--light-black);
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 100px;
-    padding: 0 0 30px;
-    color: whitesmoke;
-}
-.sidecontacts{
-    line-height: 1px;
-    font-size: 26px;
     position: relative;
-    top: 11px;
-    margin-left: 15px;
+    min-height: 100vh;
+    padding: 50px 100px;
+    gap: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-black);
 }
-form div{
+.contato .flex{
     display: flex;
     flex-direction: column;
+}
+.contato .flex .content{
+    margin:  0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    margin-left: -20vh;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    line-height: 1px;
+    font-size: 24px;
+    color: whitesmoke;
+}
+form div{
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vh;
     margin-bottom: 20px;
+    height: auto;
 }
 form input, form textarea{
     outline: unset;
     padding: 20px;
-    width: 600px;
     border: 1px solid gray;
     border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
-@media only screen and (max-width: 880px){
+@media only screen and (max-width: 924px){
     .menu{
         display: block;
     }
@@ -227,7 +267,32 @@ form input, form textarea{
     .aboutme, p{
         text-align: justify;
     }
-    aside{
-        margin: 20px auto;
+    .contato{
+        display: block;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo .box{
+        margin-left: -18vh;
+    }
+    .container .contactinfo .box .icon{
+        width: 50%;
+    }
+    .container .contactinfo .box .text{
+        font-size: 90%;
+    }
+    form :first-child{
+        font-size: 26px;
+    }
+    form div{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    form div input{
+        min-width: 200px;
+    }
+    form div textarea{
+        min-width: 200px;
     }
 }
