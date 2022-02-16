@@ -104,18 +104,22 @@ li:hover{
     cursor: pointer;
 }
 .profile{
-    min-width: 200px;
-    min-height: 200px;
+    width: 350px;
+    height: 350px;
     margin: 60px 0;
     background-color: var(--light-grey);
     border-radius: 50%;
     overflow: hidden;
 }
+.profile img{
+    width: 100%;
+}
 .center{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 img{
     max-width: 400px;
@@ -234,6 +238,13 @@ form input, form textarea{
     transform: translateX(-50%);
 }
 @media only screen and (max-width: 924px){
+    .profile{
+        width: 250px;
+        height: 250px;
+    }
+    .profile img{
+        width: 100%;
+    }
     .menu{
         display: block;
     }
