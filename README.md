@@ -1,2 +1,2 @@
-# Portifolio
- This is my personal portifolio.
+# Curriculum
+ This is my personal curriculum.
